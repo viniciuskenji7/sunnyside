@@ -1,0 +1,103 @@
+#clients {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5rem;
+    gap: 7rem;
+    background-color: var(--white);
+}
+
+#clients .title-clients {
+    font-family: var(--font-default);
+    color: var(--grayish-blue);
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+#clients .container-colunms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#clients .container-colunms .colunm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#clients .container-colunms .colunm img {
+    border-radius: 50%;
+    height: 70px;
+}
+
+#clients .container-colunms .colunm p {
+    color: var(--very-dark-grayish-blue);
+    font-family: var(--font-details);
+}
+
+#clients .container-colunms .colunm .info-client .name {
+    color: var(--very-dark-desaturated-blue);
+    font-family: var(--font-default);
+    font-weight: 900;
+}
+
+#clients .container-colunms .colunm .info-client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+#clients .container-colunms .colunm .info-client h5 {
+    color: var(--grayish-blue);
+    font-weight: 900;
+}
+
+@media (max-width: 840px) {
+    #clients {
+        gap: 5rem;
+    }
+    #clients .container-colunms {
+        flex-direction: column;
+    }
+    #clients .title-clients {
+        font-size: .7em;
+        letter-spacing: 5px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    #clients .container-colunms .colunm img {
+        height: 3.5rem;
+    }
+
+    #clients .title-clients {
+        width: 350px;
+    }
+
+    #clients .container-colunms .colunm {
+        width: 350px;
+    }
+}
+
+@media (max-width: 512px) {
+    #clients .title-clients {
+        font-size: .5em;
+        text-align: center;
+    }
+    #clients .container-colunms .colunm {
+        font-size: .9em;
+    }
+}
+

@@ -1,0 +1,113 @@
+.images-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.images-footer .colunm-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-footer .colunm-left img {
+    width: 25%;
+    height: 100%;
+    flex: 1;
+}
+
+.images-footer .colunm-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-footer .colunm-right img {
+    width: 25%;
+    height: 100%;
+    flex: 1;
+}
+
+footer {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(168, 33%, 31%);
+    background-color: hsla(168, 69%, 54%, 0.466);
+}
+footer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .footer .logo-footer {
+    color: var(--dark-moderate-cyan);
+}
+
+footer .footer .footer-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;   
+}
+
+footer .footer .footer-bar li a {
+    text-decoration: none;
+    color: hsl(168, 33%, 31%);
+    font-family: var(--font-details);
+    font-weight: 600;
+}
+
+footer .footer .bar-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: .5rem;
+}
+footer .footer h5 {
+    font-family: var(--font-default);
+    font-weight: 900;
+}
+
+@media (max-width: 840px) {
+    .images-footer {
+        flex-direction: column;
+    }
+    .images-footer .colunm-left {
+        height: 50%;
+        width: 100%;
+    }
+    .images-footer .colunm-right {
+        height: 50%;
+        width: 100%;
+    }
+
+    footer .footer .footer-bar {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 512px) {
+    footer .footer .footer-bar {
+        gap: 3.5rem;
+    }
+    footer .footer .bar-social {
+        gap: 2rem;
+    }
+    footer .footer h5 {
+        font-size: .7em;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}

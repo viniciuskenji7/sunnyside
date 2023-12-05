@@ -1,0 +1,116 @@
+#services {
+    width: 100%;
+    height: 32rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services .colunm-left{
+    height: 100%;
+    width: 50%;
+    
+    background: url('../images/desktop/image-graphic-design.jpg') no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    color: var(--dark-desatured-cyan);
+    font-family: var(--font-details);
+}
+
+#services .colunm-left h2 {
+    font-family: var(--font-default);
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+/* Colunm right */
+
+#services .colunm-right {
+    height: 100%;
+    width: 50%;
+
+    background: url('../images/desktop/image-photography.jpg') no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    color: var(--dark-blue);
+    font-family: var(--font-details);
+}
+
+#services .colunm-right h2 {
+    font-family: var(--font-default);
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+@media (max-width: 840px) {
+    #services .colunm-left {
+        background-position: center;
+    }
+    #services .colunm-right {
+        background-position: center;
+    }
+}
+
+@media (max-width:720px) {
+    #services {
+        height: 20rem;
+    }
+
+    #services .colunm-left h2 {
+        font-size: 1em;
+    }
+    #services .colunm-left p {
+        font-size: .5em;
+    }
+
+    #services .colunm-right h2 {
+        font-size: 1em;
+    }
+    #services .colunm-right p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:512px) {
+    #services {
+        flex-direction: column;
+        height: 40rem;
+    }
+    #services .colunm-left {
+        height: 50%;
+        width: 100%;
+    }
+
+    #services .colunm-left h2 {
+        font-size: 1.5em;
+    }
+    #services .colunm-left p {
+        font-size: .7em;
+    }
+
+    #services .colunm-right {
+        height: 50%;
+        width: 100%;
+    }
+    #services .colunm-right h2 {
+        font-size: 1.5em;
+    }
+    #services .colunm-right p{
+        font-size: .7em;
+    }
+    
+}

@@ -1,0 +1,45 @@
+@import 'header.css';
+@import 'about.css';
+@import 'footer.css';
+@import 'clients.css';
+@import 'services.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-details: 'Barlow', sans-serif;
+    --font-default: 'Fraunces', serif;
+
+    /* Primary colors */
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    /* graphic design text */
+    --dark-desatured-cyan: hsl(167, 40%, 24%);
+     /* photography text */
+    --dark-blue: hsl(198, 62%, 26%);
+    /* footer */
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --navbar: hsl(200, 100%, 62%);
+
+    /* Neutral */
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
